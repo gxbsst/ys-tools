@@ -1,0 +1,139 @@
+@spacing: 10px;
+@treeNodeHeight: 25px;
+
+.organization {
+  :global {
+    .ant-card-head {
+      padding: 0 16px;
+      min-height: inherit;
+    }
+    .ant-card-head-title {
+      padding: 12px 0;
+    }
+    .ant-table-footer {
+      background: transparent;
+      padding: 15px 0;
+    }
+    .ant-table-pagination {
+      position: relative;
+      margin-top: -43px;
+    }
+  }
+}
+
+.treeContainer {
+  display: flex;
+  width: 280px;
+  min-width: 280px;
+  margin-right: @spacing;
+  overflow: hidden;
+  :global {
+    .ant-card-head {
+      height: 47px;
+    }
+    .ant-card-body {
+      overflow: auto;
+    }
+  }
+}
+
+.listContainer {
+  overflow: auto;
+}
+
+.tree {
+  margin: -11px -6px 0;
+  :global {
+    .tree-actions {
+      display: none;
+      .anticon {
+        color: #1890ff;
+        width: 19px;
+        height: 19px;
+        line-height: 19px;
+        border-radius: 2px;
+        &:hover {
+          background: #1890ff;
+          color: #fff;
+        }
+        &.anticon-delete {
+          color: #f00000;
+          &:hover {
+            color: #fff;
+            background: #f00000;
+          }
+        }
+      }
+    }
+
+    .tree-node-loading {
+      .tree-actions {
+        display: block;
+        pointer-events: none;
+      }
+    }
+
+    .ant-tree-switcher, .ant-tree-node-content-wrapper {
+      height: @treeNodeHeight !important;
+      line-height: @treeNodeHeight !important;
+    }
+
+    .ant-tree-switcher {
+      width: 20px !important;
+    }
+
+    .ant-tree-node-content-wrapper {
+      flex: 1 1;
+      overflow: hidden;
+      border-radius: 0 !important;
+      margin: 0 !important;
+      padding: 0 3px !important;
+      border-top-width: 1px !important;
+      border-bottom-width: 1px !important;
+      &:hover, &.ant-tree-node-selected {
+        .tree-actions {
+          display: block;
+        }
+      }
+      &.ant-tree-node-selected {
+        color: #1890ff;
+        background-color: #e6f7ff !important;
+      }
+      .ant-tree-title {
+        height: 23px;
+        line-height: 23px;
+      }
+      .ellipsis {
+        padding: 0 3px;
+      }
+    }
+
+    li {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 1px 0;
+      ul.ant-tree-child-tree {
+        width: 100%;
+        margin: 2px 0;
+        padding: 0 0 0 13px;
+      }
+    }
+
+    .tree-node-active {
+      .tree-actions {
+        display: block;
+      }
+      .ant-tree-node-content-wrapper {
+        background-color: #e7f7ff !important;
+      }
+    }
+
+    .ant-table-pagination {
+      margin-top: -44px !important;
+    }
+
+    .ant-table-footer {
+      background: transparent !important;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.edititem {
+  margin-bottom: 10px;
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.pageHTitle {
+  position: relative;
+  background: #fff;
+  height: 50px;
+  margin: -24px -24px 0;
+  .operate {
+    position: absolute;
+    .middle;
+  }
+  .search {
+    position: absolute;
+    right: 30px;
+    .middle;
+    float: right;
+    .left {
+      float: left;
+      margin-right: 5px;
+      height: 25px;
+      width: 100px;
+    }
+    .right {
+      float: left;
+      input {
+        float: left;
+        border: 1px solid #ccc;
+        width: 150px;
+        height: 25px;
+      }
+      .btn {
+        float: left;
+        border: 1px solid #ccc;
+        width: 25px;
+        height: 25px;
+        text-align: center;
+        line-height: 25px;
+      }
+    }
+  }
+}

@@ -1,0 +1,63 @@
+.info {
+  float: right;
+}
+.seats_info {
+  & > div {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+    &:last-child {
+      margin-right: 0;
+    }
+    .input {
+      margin-right: 5px;
+      border: 1px solid #cccccc;
+    }
+    .btn {
+      position: relative;
+    }
+  }
+  .tooltip {
+    position: absolute;
+    left: 0;
+    top: -5px;
+    width: 50px;
+    height: 30px;
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px 0 rgba(14, 34, 68, 0.06);
+  }
+}
+
+.infostabs {
+  background: #fff;
+  .queue {
+    padding: 20px 30px;
+  }
+  .queueinfo {
+    overflow: hidden;
+    .item {
+      float: left;
+      margin-right: 30px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.seatslist {
+  .list {
+    label {
+      margin-right: 12px;
+    }
+  }
+  .operate_status {
+    color: blue;
+    margin-right: 10px;
+  }
+}
+
+.infostabs :global(.ant-tabs-bar) {
+  padding: 0 20px;
+}

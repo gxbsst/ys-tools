@@ -1,0 +1,140 @@
+.widget {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  line-height: 32px;
+  width: 220px;
+  min-width: 220px;
+  max-height: ~"calc(100% - 50px)";
+  color: #333;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  z-index: 998;
+  &.active {
+    display: block;
+    max-height: none;
+  }
+  :global {
+    .ant-divider-horizontal {
+      margin: 0;
+    }
+  }
+}
+
+.header {
+  padding: 10px;
+  line-height: 22px;
+  :global {
+    .ant-switch {
+      vertical-align: top;
+      background-color: #f5222d;
+    }
+
+    .ant-switch-checked {
+      background-color: #52c41a;
+    }
+  }
+}
+
+.panel {
+  padding: 20px;
+  :global {
+    .ant-input-suffix button {
+      padding: 0;
+      width: 32px;
+    }
+  }
+}
+
+.calling {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.selector {
+  position: absolute;
+  top: 0;
+  right: 100%;
+  width: 450px;
+  margin-right: 5px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  z-index: -1;
+  :global {
+    .ant-table {
+      border: none;
+      border-radius: 0;
+    }
+    table {
+      padding: 0 !important;
+      th {
+        padding: 11px 8px !important;
+      }
+      th, td {
+        text-align: center;
+      }
+      tbody tr {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.phone {
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+}
+
+.timer {
+  padding-left: 5px;
+}
+
+.fixable {
+  padding-left: 5px;
+  :global(.anticon) {
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    border-radius: 22px;
+    vertical-align: top;
+    cursor: pointer;
+    color: #fff;
+    background: #1890ff;
+  }
+}
+
+.fixed {
+  position: static;
+  border-left: 1px solid #e8e8e8;
+  box-shadow: none;
+}
+
+.unfixed {
+  :global(.anticon) {
+    background: #bfbfbf;
+  }
+}
+
+.customer {
+  padding: 8px 15px;
+  line-height: 22px;
+  cursor: pointer;
+  &:hover {
+    background: #e7f7ff;
+  }
+}
+
+.dialog {
+  :global {
+    .ant-divider {
+      margin: 5px 0;
+    }
+  }
+}
+
+.addClew {
+  text-align: center;
+  padding: 20px;
+}

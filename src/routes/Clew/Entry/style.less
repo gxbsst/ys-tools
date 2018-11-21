@@ -1,0 +1,61 @@
+@import "~antd/lib/style/themes/default.less";
+
+.entryErea {
+  :global {
+    .ant-card+.ant-card {
+      margin-top: 10px;
+    }
+    .ant-card-wider-padding .ant-card-body {
+      padding: 24px 32px;
+    }
+  }
+}
+.followCard {
+  &+.followCard {
+    margin-top: 10px;
+  }
+
+}
+.uploadErea {
+  .title {
+    font-size: 14px;
+    color: @heading-color;
+    font-weight: 500;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+  }
+}
+
+.dragRow {
+  :global {
+    .ant-upload-drag {
+      height: 200px;
+    }
+  }
+}
+
+.enterBox {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: flex-start;
+  &>div {
+    a {
+      display: block;
+      padding: 15px 0;
+      line-height: 2;
+      color: inherit;
+    }
+    margin-right: 20px;
+    text-align: center;
+    padding: 10px;
+    border: 1px dashed #d9d9d9;
+    border-radius: 4px;
+    cursor: pointer;
+    &:hover {
+      color: #1890ff;
+      border-color: #40a9ff;
+    }
+  }
+}

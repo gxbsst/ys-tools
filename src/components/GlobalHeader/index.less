@@ -1,0 +1,115 @@
+@import "~antd/lib/style/themes/default.less";
+
+@hoverBackgroundColor: rgba(255, 255, 255, .15);
+@borderColor: #95d6ec;
+@headerHeight: 50px;
+
+.header {
+  padding: 0 12px 0 0;
+  color: #fff;
+  box-shadow: 0 1px 4px rgba(0, 21, 41, .08);
+  position: relative;
+  z-index: 999;
+}
+
+:global {
+  .ant-layout {
+    overflow-x: hidden;
+    background: #f5f7f9;
+  }
+
+  .ant-layout-header {
+    line-height: @headerHeight;
+    height: @headerHeight;
+    background: #1cacda;
+  }
+
+  .ant-badge {
+    color: #fff;
+  }
+}
+
+.menu {
+  :global(.anticon) {
+    margin-right: 8px;
+  }
+  :global(.ant-dropdown-menu-item) {
+    width: 160px;
+  }
+}
+
+i.trigger {
+  position: relative;
+  font-size: 12px;
+  line-height: @headerHeight;
+  cursor: pointer;
+  transition: all .3s;
+  padding: 0 24px;
+  &:hover {
+    background: @hoverBackgroundColor;
+  }
+  &::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 50%;
+    width: 1px;
+    height: 16px;
+    background: @borderColor;
+    transform: translateY(-50%) scaleX(.5);
+  }
+}
+
+@media screen and (max-width: @screen-xs) {
+  .trigger {
+    display: none;
+  }
+}
+
+.right {
+  float: right;
+  height: 100%;
+  a {
+    cursor: pointer;
+    padding: 0 12px;
+    color: #fff;
+    display: inline-block;
+    transition: background .3s;
+    line-height: @headerHeight;
+    text-decoration: none;
+    vertical-align: top;
+    > i {
+      display: block;
+      font-size: 16px;
+      line-height: @headerHeight;
+    }
+    &:global(.ant-popover-open),
+    &:hover {
+      background: @hoverBackgroundColor;
+      text-decoration: none;
+    }
+  }
+  .search {
+    padding: 0;
+    margin: 0 12px;
+    &:hover {
+      background: transparent;
+    }
+  }
+  .account {
+    display: inline-block;
+    line-height: @headerHeight;
+    cursor: default;
+    .avatar {
+      float: left;
+      margin: 13px 8px 13px 0;
+      background: @hoverBackgroundColor;
+      vertical-align: middle;
+    }
+    i {
+      display: inline-block;
+      margin-left: 3px;
+      font-size: 12px;
+    }
+  }
+}

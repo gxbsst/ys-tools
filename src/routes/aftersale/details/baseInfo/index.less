@@ -1,0 +1,49 @@
+.basic_info {
+  background: #fff;
+  header {
+    height: 52px;
+    line-height: 52px;
+    border-bottom: 1px solid #e8e8e8;
+  }
+}
+
+.edit_before {
+  width: 50px;
+  border: none;
+  background: #fff;
+}
+
+.separate_line {
+  margin: 0 -31px;
+}
+
+.edit_after {
+  min-width: 100px;
+  border: 1px dashed #ccc;
+}
+
+.item {
+  & > div {
+    width: 46%;
+    display: inline-block;
+    margin-bottom: 0;
+  }
+  &.fullline {
+    & > div {
+      width: 92%;
+      display: inline-block;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.btn {
+  margin: 10px 0;
+}
+
+.shopDetails {
+  font-size: 15px;
+  padding: 16px 16px;
+  font-weight: 500;
+  display: inline-block;
+}

@@ -1,0 +1,109 @@
+@import "~antd/lib/style/themes/default.less";
+@import "../../utils/utils.less";
+
+@spacing: 10px;
+
+.card {
+  margin-bottom: @spacing;
+  box-shadow: 0 0 15px rgba(0, 0, 0, .05);
+  height: 318px;
+  :global {
+    .ant-card-head {
+      padding: 0 20px;
+    }
+    .ant-card-body {
+      padding: 0 !important;
+    }
+    .ant-card-extra {
+      padding: 15px 0;
+    }
+  }
+}
+
+.inputGroup {
+  margin: -4px 0;
+}
+
+.picker {
+  width: 100px;
+}
+
+.pagination {
+  text-align: center;
+  padding: 5px 0 12px;
+}
+
+.rank {
+  :global {
+    .ant-table-small {
+      border: none;
+      border-radius: 0;
+      & > .ant-table-content .ant-table-header {
+        background: transparent;
+        line-height: 24px;
+      }
+    }
+    .ant-table {
+      table {
+        width: 100%;
+      }
+      th, td {
+        padding: 11px;
+        background: none !important;
+      }
+      tr:nth-last-of-type(1) td {
+        border-bottom: none;
+      }
+      th:first-of-type, td:first-of-type {
+        text-align: center;
+      }
+    }
+    .ant-tag {
+      margin: 0;
+    }
+  }
+}
+
+.number {
+  display: inline-block;
+  width: 23px;
+  text-align: center;
+}
+
+.listItem {
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: background .3s ease;
+  &:hover {
+    background: #e7f7ff;
+  }
+  :global {
+    .ant-list-item-content {
+      display: block;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+}
+
+.carouselItem {
+  position: relative;
+  .image {
+    width: 100%;
+    height: 263px;
+    background: no-repeat center;
+    background-size: auto 100%;
+  }
+  .desc {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 15px 28px;
+    color: #fff;
+    word-break: break-all;
+    line-height: 20px;
+    background: rgba(0, 0, 0, 0.5);
+  }
+}

@@ -1,0 +1,48 @@
+@border: 2px;
+@color: #ddd;
+@blue: #1890ff;
+@hover: @blue;
+
+th.draggable, td.draggable {
+  text-align: center !important;
+}
+
+td.draggable {
+  cursor: move;
+  span {
+    display: block;
+    width: 15px;
+    margin: 0 auto;
+    border-top: @border solid @color;
+    border-bottom: @border solid @color;
+    &:before {
+      display: block;
+      content: '';
+      height: @border;
+      background: @color;
+      margin: @border 0;
+    }
+  }
+  &:hover {
+    span {
+      border-top-color: @hover;
+      border-bottom-color: @hover;
+      &:before {
+        background: @hover;
+      }
+    }
+  }
+}
+
+:global {
+  .drop-over-downward, .drop-over-upward {
+    transition: none !important;
+    background: linear-gradient(to right, @blue, @blue 3px, transparent 3px, transparent) repeat-x;
+    background-size: 5px 1px;
+  }
+
+  .drop-over-downward {
+    background-position: bottom;
+    background-size: 5px 2px;
+  }
+}

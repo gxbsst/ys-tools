@@ -1,0 +1,84 @@
+@import "~antd/lib/style/themes/default.less";
+
+@spacing: 10px;
+
+.pageHeader {
+  background: @component-background;
+  padding: 8px @spacing 0 @spacing;
+  border-bottom: @border-width-base @border-style-base @border-color-split;
+
+  .detail, .row {
+    display: flex;
+  }
+
+  .headerTop {
+    display: flex;
+    padding-left: 8px;
+  }
+
+  .breadcrumb {
+    margin-bottom: 8px;
+    line-height: 32px;
+  }
+
+  .tabs {
+    margin: 0 0 -17px 10px;
+    :global {
+      .ant-tabs-bar {
+        border-bottom: @border-width-base @border-style-base @border-color-split;
+      }
+    }
+  }
+
+  .logo {
+    flex: 0 1 auto;
+    margin-right: 16px;
+    padding-top: 1px;
+    > img {
+      width: 28px;
+      height: 28px;
+      border-radius: @border-radius-base;
+      display: block;
+    }
+  }
+
+  .title {
+    font-size: 20px;
+    font-weight: 500;
+    color: @heading-color;
+  }
+
+  .action {
+    flex: 1 1;
+    text-align: right;
+    line-height: 32px;
+    :global {
+      .ant-btn-group:not(:last-child),
+      .ant-btn:not(:last-child) {
+        margin-right: 8px;
+      }
+
+      .ant-btn-group > .ant-btn {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .title, .action, .content, .extraContent, .main {
+    flex: auto;
+  }
+
+  .logo, .content, .extraContent, .title, .action {
+    margin-bottom: 8px;
+  }
+
+  .action, .extraContent {
+    text-align: right;
+  }
+
+  .extraContent {
+    margin-left: 88px;
+    min-width: 242px;
+  }
+}
+

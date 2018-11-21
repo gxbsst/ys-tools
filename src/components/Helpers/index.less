@@ -1,0 +1,46 @@
+.helper {
+  margin: 0 6px;
+  vertical-align: middle;
+  &.info {
+    color: #1890ff;
+  }
+  &.warn {
+    color: #fa8c16;
+  }
+  &.error {
+    color: #f5222d;
+  }
+}
+
+.levelCrumb {
+  display: inline-block;
+}
+
+.levelCrumbItem {
+  &:after {
+    content: '/';
+    padding: 0 8px;
+    color: #999;
+  }
+  &:last-of-type {
+    &:after {
+      content: none;
+    }
+  }
+}
+
+.ellipsis {
+  display: inline-block;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+:global {
+  .checkbox-group {
+    .ant-divider {
+      margin: 0 16px 0 6px;
+    }
+  }
+}

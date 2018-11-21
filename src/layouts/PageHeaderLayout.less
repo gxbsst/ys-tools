@@ -1,0 +1,11 @@
+@spacing: 10px;
+
+.content {
+  padding: @spacing;
+  :global {
+    .ant-card-body, .ant-card-wider-padding .ant-card-body {
+      transition: none;
+      padding: @spacing;
+    }
+  }
+}

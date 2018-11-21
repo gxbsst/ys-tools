@@ -1,0 +1,106 @@
+@spacing: 10px;
+@treeNodeHeight: 25px;
+
+.role {
+  :global {
+    .ant-card-head {
+      padding: 0 16px;
+      min-height: inherit;
+    }
+    .ant-card-head-title {
+      padding: 12px 0;
+    }
+  }
+}
+
+.form {
+  padding: 5px 5px 5px 15px;
+  :global {
+    .ant-form-item-label {
+      min-width: auto !important;
+    }
+  }
+}
+
+.refresh {
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+}
+
+.footer {
+  background: #fff;
+  margin: 10px -10px -10px;
+  padding: 10px;
+  line-height: 32px;
+  border-top: 1px solid #e8e8e8;
+  text-align: right;
+  :global {
+    .ant-btn {
+      margin-left: 10px;
+    }
+  }
+}
+
+.tabPane {
+  padding: 0 16px;
+}
+
+.regionSelector {
+  width: 260px;
+}
+
+.regions {
+  :global {
+    .ant-tag {
+      line-height: 26px;
+      height: 27px;
+      padding: 0 22px 0 12px;
+      position: relative;
+      cursor: default;
+      margin: 0 10px 10px 0;
+      .anticon {
+        position: absolute;
+        top: 0;
+        right: 0;
+        line-height: 26px;
+        width: 22px;
+        display: inline-block;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.addRegion {
+  background: #fff;
+  border-style: dashed;
+  padding: 0 15px !important;
+  cursor: pointer !important;
+  :global {
+    .anticon {
+      position: inherit !important;
+      width: auto !important;
+    }
+  }
+}
+
+.treeContainer {
+  display: flex;
+  width: 280px;
+  margin-right: @spacing;
+  overflow: hidden;
+  :global {
+    .ant-card-head {
+      height: 47px;
+    }
+    .ant-card-body {
+      flex: 1 1;
+      overflow-y: auto;
+      height: calc(100vh - 165px);
+    }
+    .ant-tree {
+      margin: -3px -5px;
+    }
+  }
+}

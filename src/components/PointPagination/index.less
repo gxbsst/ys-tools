@@ -1,0 +1,41 @@
+.pagination {
+  :global {
+    .ant-pagination-prev, .ant-pagination-next {
+      display: none;
+    }
+
+    .ant-pagination-item {
+      border: none;
+      min-width: 20px;
+      width: 20px;
+      span {
+        display: inline-block;
+        width: 20px;
+        height: 24px;
+        &:before {
+          display: block;
+          content: '';
+          width: 8px;
+          height: 8px;
+          margin: 8px 6px;
+          background: #ddd;
+          border-radius: 8px;
+          transition: all .2s;
+        }
+      }
+      &:hover {
+        span:before {
+          background: #66b5fc;
+        }
+      }
+    }
+
+    .ant-pagination-item-active {
+      pointer-events: none;
+      span:before {
+        background: #1890ff;
+        box-shadow: 0 0 3px 1px #1890ff;
+      }
+    }
+  }
+}

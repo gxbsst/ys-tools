@@ -1,0 +1,28 @@
+.current {
+  span {
+    display: inline-block;
+    margin-right: 15px;
+  }
+}
+
+.info {
+  margin-bottom: 8px !important;
+}
+
+.filter {
+  margin-bottom: 15px;
+}
+
+.seatForm {
+  :global {
+    .ant-row {
+      display: flex;
+      .ant-col-12 {
+        width: auto;
+      }
+      .ant-col-12:first-of-type, .ant-form-item-control-wrapper {
+        flex: 1 1;
+      }
+    }
+  }
+}

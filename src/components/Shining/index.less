@@ -1,0 +1,33 @@
+@keyframes shining {
+  0% {
+    background: rgba(248, 29, 34, 0);
+  }
+  50% {
+    background: rgba(248, 29, 34, .1);
+  }
+  100% {
+    background: rgba(248, 29, 34, 0);
+  }
+}
+
+.shining {
+  position: relative;
+}
+
+.mask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: '';
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+  transform: translate3d(1, 1, 1);
+}
+
+.active {
+  .mask {
+    animation: shining .5s infinite;
+  }
+}

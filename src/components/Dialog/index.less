@@ -1,0 +1,45 @@
+.center {
+  text-align: center;
+  white-space: normal;
+  word-break: break-all;
+  &:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    width: 0;
+  }
+
+  :global {
+    .ant-modal {
+      white-space: initial;
+      display: inline-block;
+      vertical-align: middle;
+      top: 0;
+      text-align: left;
+    }
+  }
+}
+
+:global {
+  .ant-modal-mask {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  .ant-form-explain {
+    font-size: 12px;
+    line-height: 18px;
+    margin: -2px 0 2px;
+  }
+
+  .ant-form-item {
+    margin-bottom: 18px;
+    &:nth-last-of-type(1) {
+      margin-bottom: 0;
+    }
+  }
+
+  .ant-form-item-with-help {
+    margin-bottom: 0;
+  }
+}

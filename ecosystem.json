@@ -1,0 +1,32 @@
+{
+  "deploy": {
+    "dev": {
+      "user": "root",
+      "host": [
+        "172.21.245.196"
+      ],
+      "ref": "origin/dev",
+      "repo": "ssh://git@stash.weimob.com:7999/ag/saas-crm-fe.git",
+      "path": "/data/www/dev/saas-crm-fe"
+    },
+    "qa": {
+      "user": "root",
+      "host": [
+        "10.11.16.227"
+      ],
+      "ref": "origin/release",
+      "repo": "ssh://git@stash.weimob.com:7999/ag/saas-crm-fe.git",
+      "path": "/data/www/test/saas-crm-fe"
+    },
+    "prod": {
+      "user": "root",
+      "host": [
+        "10.16.169.68",
+        "10.16.164.44"
+      ],
+      "ref": "origin/master",
+      "repo": "ssh://git@stash.weimob.com:7999/ag/saas-crm-fe.git",
+      "path": "/data/www/dev/saas-crm-fe"
+    }
+  }
+}

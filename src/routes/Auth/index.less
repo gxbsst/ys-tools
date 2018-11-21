@@ -1,0 +1,99 @@
+.login {
+  width: 950px;
+  color: #fff;
+}
+
+.form {
+  width: 300px;
+  color: #fff !important;
+  :global {
+    .ant-input {
+      border: none;
+      padding: 0 10px 0 35px !important;
+      font-size: 13px;
+      line-height: 40px;
+      height: 40px;
+      outline: none;
+      background: rgba(255, 255, 255, .65);
+      transition: background .35s;
+      &:focus {
+        background: rgba(255, 255, 255, 1);
+      }
+      &::-webkit-input-placeholder {
+        font-weight: 300;
+        color: rgba(0, 0, 0, .35);
+      }
+    }
+    .ant-form-item {
+      margin-bottom: 24px !important;
+    }
+    .ant-form-item-with-help {
+      margin-bottom: 6px !important;
+    }
+    .ant-form-explain {
+      margin-top: 6px;
+      font-size: 12px;
+      line-height: 12px;
+      font-weight: 400;
+    }
+    .ant-btn {
+      width: 100%;
+    }
+  }
+}
+
+h1.title {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 40px;
+  margin: -30px 0 15px;
+  color: #fff;
+}
+
+.icon {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 16px;
+}
+
+.spin {
+  width: 550px;
+  height: 320px;
+  margin-right: 100px;
+  box-shadow: 0 0 0 10px hsla(0, 0%, 100%, .3);
+  background: #fff;
+  overflow: hidden;
+  :global {
+    .anticon-spin {
+      font-size: 25px;
+      line-height: 320px;
+    }
+  }
+}
+
+.carousel {
+  width: 100%;
+  height: 100%;
+}
+
+.mien {
+  position: relative;
+  .mienImage {
+    width: 100%;
+    height: 320px;
+    background: no-repeat center;
+    background-size: auto 100%;
+  }
+  .mienDesc {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 15px 28px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+    word-break: break-all;
+    line-height: 20px;
+    background: rgba(0, 0, 0, 0.5);
+  }
+}

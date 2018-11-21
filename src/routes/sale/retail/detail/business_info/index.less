@@ -1,0 +1,52 @@
+.margin {
+  margin-bottom: 16px;
+}
+
+.btn {
+  margin: 20px 0 10px 0;
+  margin-left: 2%;
+}
+
+.input {
+  overflow: hidden;
+  & > div {
+    display: inline-block;
+    width: 46%;
+    margin-bottom: 10px;
+  }
+  .text {
+    span {
+      text-align: right;
+      display: inline-block;
+      color: rgba(0, 0, 0, 0.85);
+      font-size: 13px;
+      &:first-child {
+        width: 33.33%;
+      }
+    }
+  }
+}
+
+.line {
+  width: 133%;
+  margin: 25px 0 20px -25px;
+  height: 1px;
+  border-bottom: 1px dotted #ccc;
+}
+
+.hundred {
+  & > div {
+    & > div {
+      width: 60%;
+      display: inline-block;
+      &:first-child {
+        width: 15%;
+      }
+    }
+  }
+}
+
+.scrollBody :global(.ant-modal-body) {
+  height: 600px !important;
+  overflow: auto;
+}

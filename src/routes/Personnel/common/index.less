@@ -1,0 +1,226 @@
+.pageHTitle {
+  margin: -24px -24px 0;
+  background: #fff;
+  height: 50px;
+  line-height: 50px;
+  & > div {
+    height: 100%;
+  }
+}
+
+.pageHheader {
+  margin: -24px -24px 0;
+  height: 50px;
+  background: #fff;
+}
+
+.headline {
+  padding-left: 30px;
+}
+
+.middle {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.searchBox {
+  @line: 1px solid #ccc;
+  .vertical_center;
+  &.width {
+    width: 300px;
+  }
+  input {
+    width: 90%;
+    float: left;
+    height: 30px;
+    padding-left: 10px;
+    outline: none;
+    border: @line;
+  }
+  .btn {
+    float: left;
+    width: 10%;
+    height: 30px;
+    border: @line;
+    border-left: none;
+    position: relative;
+    i {
+      .middle;
+    }
+  }
+}
+
+.vertical_center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.Top(@height) {
+  margin-top: @height;
+}
+
+.marginTop {
+  .Top(20px);
+}
+
+.tableCard :global('.ant-card-wider-padding .ant-card-body') {
+  padding-top: 8px !important;
+}
+
+.operate_icon {
+  margin-right: 10px;
+  i {
+    font-size: 16px;
+  }
+}
+
+.separate_line {
+  height: 10px;
+  background: #f0f2f5;
+}
+
+.important {
+  position: relative;
+  &:before {
+    content: '*';
+    color: red;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -5px;
+  }
+}
+
+.borderNone {
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.columnsTwo {
+  &.left {
+    float: left;
+    &.width {
+      //min-width: 100px;
+      margin-right: 40px;
+    }
+    &.right {
+      text-align: right;
+    }
+  }
+  &.right {
+    overflow: auto;
+  }
+}
+
+.btnBox {
+  button {
+    margin-right: 20px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.hint {
+  color: #62CDF5;
+}
+
+.card {
+  box-shadow: 0 3px 12px 0 rgba(14, 34, 68, 0.06);
+  border-radius: 5px;
+}
+
+// 坐席状态
+.before_circle {
+  position: relative;
+  &:before {
+    content: "";
+    background: red;
+    width: 6px;
+    height: 6px;
+    display: block;
+    left: -10px;
+    .vertical_center;
+    border-radius: 6px;
+  }
+}
+
+.operate {
+  .item {
+    color: #40a9ff;
+    margin-right: 10px;
+    &:hover {
+      cursor: pointer;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.handle {
+  text-align: right;
+  border-top: 1px solid #e8e8e8;
+  margin: 0 -24px;
+  button {
+    margin-right: 30px;
+    margin-top: 20px;
+  }
+}
+
+.item {
+  & > div {
+    width: 46%;
+    display: inline-block;
+  }
+}
+
+.leisure {
+  .before_circle;
+}
+
+.call {
+  .before_circle;
+}
+
+.busy {
+  .before_circle;
+}
+
+.out_line {
+  .before_circle;
+}
+
+.foldtable .ant-table-expanded-row > td:last-child {
+  padding: 0 48px 0 8px;
+}
+
+.foldtable {
+  :global {
+    .ant-table-expanded-row {
+      .ant-table-wrapper {
+        padding-left: 50px;
+      }
+    }
+  }
+}
+
+.scorllBody {
+  :global {
+    .ant-table-expanded-row {
+      .ant-table-wrapper {
+        padding-left: 50px;
+      }
+    }
+  }
+}
+
+

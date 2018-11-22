@@ -1,0 +1,55 @@
+@import "~antd/lib/style/themes/default.less";
+@import "../../utils/utils.less";
+
+@spacing: 10px;
+
+.card {
+  margin-bottom: @spacing;
+  box-shadow: 0 0 15px rgba(0, 0, 0, .05);
+  height: 318px;
+  :global {
+    .ant-card-head {
+      padding: 0 20px;
+    }
+    .ant-card-body {
+      padding: 0 !important;
+      background: #f8f9fb;
+      height: 100%;
+    }
+    .ant-card-extra {
+      padding: 15px 0;
+    }
+    .basic {
+      padding: 10px;
+      border: 1px solid red;
+      background: #FFF;
+      button {
+        background: green;
+        border-radius: 15px;
+        border: 0;
+      }
+    }
+    .ant-divider-horizontal {
+      margin-bottom: 0;
+      margin-top: 10px;
+    }
+    .available {
+      padding: 10px;
+      height: 100%;
+      .td1 {
+        width: 10%;
+      }
+      .td2 {
+        width: 40%;
+      }
+      .td3 {
+        width: 15%;
+      }
+      .td4 {
+        width: 40%;
+      }
+    }
+  }
+
+
+}

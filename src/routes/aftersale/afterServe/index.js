@@ -1,27 +1,18 @@
-import React, {PureComponent} from "react";
+import React, {PureComponent} from 'react';
 import {connect} from 'dva';
-import {Link, hashHistory, routerRedux} from "dva/router";
-import Dialog from '../../../components/Dialog';
+import {hashHistory, Link, routerRedux} from 'dva/router';
 import Distribution from '../common/distribution'
-import request from "../../../utils/request";
+import request from '../../../utils/request';
 import autodata from '../../../decorators/AutoData';
-import can from '../../../decorators/Can';
 import PageHeaderLayout from '../../../layouts/PageHeaderLayout';
 import {getUrlParam} from '../../../utils/index';
 import {getCustomerStatus} from '../../../utils/helpers'
 import common from '../../Personnel/common/index.less'
 import {enums} from '../../../utils';
-import {Action, Select, Ellipsis, Stars} from '../../../components/Helpers';
+import {Select, Stars} from '../../../components/Helpers';
 import moment from 'moment'
 import {Region} from '../../../components/Cascader';
-import styles from './index.less'
-import {
-  Card,
-  Table,
-  Cascader,
-  DatePicker,
-  Button
-} from 'antd';
+import {Button, Card, DatePicker, Table} from 'antd';
 
 const {RangePicker} = DatePicker;
 const customerstate = [
@@ -129,9 +120,9 @@ export default class Callcenter extends PureComponent {
     selectedRowKeys: [],
     disabled: true,
     visible: false
-  }
+  };
   customername = (record) => () => {
-    const {dispatch} = this.props
+    const {dispatch} = this.props;
     dispatch(routerRedux.push({
       pathname: `/aftersale/details/${record.id}`,
       query: {
@@ -242,7 +233,7 @@ export default class Callcenter extends PureComponent {
     this.setState({
       child: data
     })
-  }
+  };
   // 展开table
   unfold = async (expanded, record) => {
     if (expanded) {
@@ -258,7 +249,7 @@ export default class Callcenter extends PureComponent {
       }
       contract.loading = false;
     }
-  }
+  };
   showModal = () => {
     this.setState({
       visible: true,
@@ -268,7 +259,7 @@ export default class Callcenter extends PureComponent {
     this.setState({
       visible: false,
     });
-  }
+  };
 
   render() {
     that = this;

@@ -12,6 +12,7 @@ import setting from './setting';
 // import search from './search';
 // import callcenter from './callcenter';
 import auth from './auth';
+import vehicleManager from './vehicle-manager';
 
 export const dynamicWrapper = (app, models, component) => dynamic({
   app,
@@ -33,7 +34,9 @@ export const getNavData = app => [
     layout: 'BasicLayout',
     name: '首页',
     children: [
+
       workplace(app),
+      vehicleManager(app),
       // search(app),
       // callcenter(app),
       // clew(app),

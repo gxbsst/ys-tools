@@ -1,5 +1,7 @@
+import React from 'react';
 import {Tag} from 'antd';
 import {Stars} from './components/Helpers';
+import _ from 'lodash';
 
 export const filters = (array, ...conditions) => {
   const items = [];

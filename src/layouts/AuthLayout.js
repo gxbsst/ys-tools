@@ -42,7 +42,7 @@ export default class AuthLayout extends PureComponent {
             };
             return <Route {...routeProps}/>;
           })}
-          <div className={styles.footer}>Copyright &copy; 2017 上海微盟科技股份有限公司</div>
+          <div className={styles.footer}>Copyright &copy; 2018 上海驭势</div>
         </div>
       </DocumentTitle>
     );

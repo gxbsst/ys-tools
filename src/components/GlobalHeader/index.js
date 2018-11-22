@@ -69,8 +69,8 @@ export default class GlobalHeader extends PureComponent {
         <Icon className={styles.trigger} type={collapsed ? 'menu-unfold' : 'menu-fold'}
               onClick={this.toggle}/>
         <div className={styles.right}>
-          {copyPermissions}
-          <CallCenter/>
+          {/*{copyPermissions}*/}
+          {/*<CallCenter/>*/}
           {name ? (
             <Dropdown overlay={menu}>
               <span className={styles.account}>

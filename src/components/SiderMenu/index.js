@@ -110,8 +110,8 @@ export default class SiderMenu extends PureComponent {
       <Sider trigger={null} collapsible collapsed={collapsed} breakpoint="md" onCollapse={this.onCollapse} width={220} className={styles.sider}>
         <div className={styles.logo}>
           <Link to="/">
-            <i>CRM</i>
-            <h1>weimob</h1>
+            <i>FAE</i>
+            <h1>诊断工具</h1>
           </Link>
         </div>
         <Menu {...menuProps} className={styles.menu} mode="inline" onOpenChange={this.handleOpenChange} selectedKeys={this.getCurrentMenuSelectedKeys()}>

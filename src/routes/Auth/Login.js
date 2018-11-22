@@ -6,6 +6,7 @@ import qs from 'qs';
 import { autodata } from '../../decorators';
 import { request, redirectTo } from '../../utils';
 import styles from './index.less';
+import  _ from 'lodash';
 
 const { Item: FormItem } = Form;
 

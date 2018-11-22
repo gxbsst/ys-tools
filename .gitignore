@@ -11,3 +11,4 @@ _roadhog-api-doc
 npm-debug.log*
 yarn-error.log
 dist
+desktop

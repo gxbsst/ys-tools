@@ -7,12 +7,14 @@ import workplace from './workplace';
 // import finance from './finance';
 // import business from './business';
 // import afterSales from './after-sales';
-// import personnel from './personnel';
+import personnel from './personnel';
 import setting from './setting';
 // import search from './search';
 // import callcenter from './callcenter';
 import auth from './auth';
 import vehicleManager from './vehicle-manager';
+import logsManager from './log-manager';
+import tool from './tool-manager';
 
 export const dynamicWrapper = (app, models, component) => dynamic({
   app,
@@ -36,7 +38,9 @@ export const getNavData = app => [
     children: [
 
       workplace(app),
+      tool(app),
       vehicleManager(app),
+      logsManager(app),
       // search(app),
       // callcenter(app),
       // clew(app),

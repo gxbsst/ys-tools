@@ -23,6 +23,7 @@
     "deploy-prod": "pm2 deploy ecosystem.json prod"
   },
   "dependencies": {
+    "ant-design-pro": "^2.1.1",
     "antd": "^3.0.0",
     "babel-polyfill": "^6.26.0",
     "babel-runtime": "^6.9.2",

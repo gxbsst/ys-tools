@@ -20,14 +20,15 @@ export default class Workplace extends PureComponent {
     const { $data: { data } } = this.props;
     return (
       <PageHeaderLayout>
-        <Row gutter={10}>
-          {modules.map(({ name, component: ModuleComponent }) => _.some(data, { name, status: 1 }) ? (
-            <Col xl={8} lg={12} md={24} key={name}>
-              <ModuleComponent/>
-            </Col>
-          ) : null)}
-          <Col xl={8} lg={12} md={24}><Message/></Col>
-        </Row>
+        <h1>COMING SOON...</h1>
+        {/*<Row gutter={10}>*/}
+          {/*{modules.map(({ name, component: ModuleComponent }) => _.some(data, { name, status: 1 }) ? (*/}
+            {/*<Col xl={8} lg={12} md={24} key={name}>*/}
+              {/*<ModuleComponent/>*/}
+            {/*</Col>*/}
+          {/*) : null)}*/}
+          {/*<Col xl={8} lg={12} md={24}><Message/></Col>*/}
+        {/*</Row>*/}
       </PageHeaderLayout>
     );
   }

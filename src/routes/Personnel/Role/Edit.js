@@ -7,6 +7,7 @@ import { Action, CheckboxGroup } from '../../../components/Helpers';
 import PageHeaderLayout from '../../../layouts/PageHeaderLayout';
 import { tree, enums, request, redirectTo, getNodesByPos, findChildrenDeep } from '../../../utils';
 import styles from './index.less';
+import _ from 'lodash'
 
 const { TreeNode } = Tree;
 const { TabPane } = Tabs;

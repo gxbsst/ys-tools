@@ -3,7 +3,7 @@ import { dynamicWrapper } from './index';
 export default app => (
   {
     name: '车辆管理',
-    icon: 'setting',
+    icon: 'car',
     path: 'vehicle_manager',
     can: [12000000, 6000000],
     children: [

@@ -19,14 +19,20 @@
     .ant-card-extra {
       padding: 15px 0;
     }
+    .blue {
+      color: #2593fb;
+    }
+    .green {
+      color: #58c22d;
+    }
     .basic {
       padding: 10px;
-      border: 1px solid red;
       background: #FFF;
       button {
-        background: green;
+        background: #58c22d;
         border-radius: 15px;
         border: 0;
+        margin-bottom: 15px;
       }
     }
     .ant-divider-horizontal {
@@ -36,11 +42,32 @@
     .available {
       padding: 10px;
       height: 100%;
+      td {
+        height: 40px;
+      }
       .td1 {
         width: 10%;
       }
       .td2 {
         width: 40%;
+        .available_mem {
+          width: 100%;
+          .dot-h, .dot-l {
+            border-radius: 8px;
+            display: inline-block;
+            margin-right: 8px;
+            position: relative;
+            top: -1px;
+            height: 8px;
+            width: 8px;
+          }
+          .dot-h {
+            background: rgb(24, 144, 255);
+          }
+          .dot-l {
+            background: #e4e7ee;
+          }
+        }
       }
       .td3 {
         width: 15%;
@@ -48,8 +75,16 @@
       .td4 {
         width: 40%;
       }
+      .antd-pro-charts-miniChart {
+        canvas {
+          margin-top: -30px;
+        }
+      }
+    }
+    .network {
+      i {
+        font-weight: bold;
+      }
     }
   }
-
-
 }

@@ -1,13 +1,10 @@
 import React, {PureComponent} from 'react';
 import {Card, Tag} from 'antd';
-
 import styles from 'module.component.less'
 
 const bodyStyle = {padding: 0};
 
-export default class GPSComponent extends PureComponent {
-
-
+export default class CanComponent extends PureComponent {
   render() {
     const cardProps = {
       title: 'GPS',
@@ -20,7 +17,8 @@ export default class GPSComponent extends PureComponent {
 
     return (
       <Card {...cardProps}>
-        testing
+        <Tag color="blue">{signal}</Tag>
+        <span>{text}</span>
       </Card>
     );
   }

@@ -1,0 +1,39 @@
+@import "~antd/lib/style/themes/default.less";
+@import "../../utils/utils.less";
+
+.module {
+  :global {
+    .ant-table-small {
+      border: none;
+      border-radius: 0;
+      & > .ant-table-content .ant-table-header {
+        background: transparent;
+        line-height: 24px;
+      }
+    }
+    .ant-table {
+      table {
+        width: 100%;
+      }
+      th, td {
+        padding: 11px;
+        background: none !important;
+      }
+      tr:nth-last-of-type(1) td {
+        border-bottom: none;
+      }
+      th:first-of-type, td:first-of-type {
+        text-align: center;
+      }
+    }
+    .ant-tag {
+      margin: 0;
+    }
+  }
+}
+
+.number {
+  display: inline-block;
+  width: 23px;
+  text-align: center;
+}

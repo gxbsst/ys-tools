@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import VehicleItem from './index'
+import VehicleItem from '../index'
 import {render} from 'react-testing-library'
 
 describe('VehicleItem', function () {

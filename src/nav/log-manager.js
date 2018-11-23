@@ -21,7 +21,14 @@ export default app => (
         component: dynamicWrapper(app, ['mien', 'announcement', 'message', 'rank'], () =>
           import("../routes/Dashboard/Workplace")
         )
-      },
+      },{
+        name: '问题上传',
+        path: 'upload',
+        can: 11001000,
+        component: dynamicWrapper(app, ['mien', 'announcement', 'message', 'rank'], () =>
+          import("../routes/Dashboard/Workplace")
+        )
+      }
     ],
   }
 )

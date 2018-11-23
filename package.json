@@ -79,6 +79,7 @@
     "husky": "^0.14.3",
     "immutability-helper": "^2.6.4",
     "jest": "^21.0.1",
+    "jest-canvas-mock": "^1.1.0",
     "jest-cli": "^23.6.0",
     "jest-emotion": "^9.2.11",
     "lint-staged": "^4.3.0",
@@ -111,7 +112,8 @@
   },
   "jest": {
     "setupFiles": [
-      "<rootDir>/tests/setupTests.js"
+      "<rootDir>/tests/setupTests.js",
+      "jest-canvas-mock"
     ],
     "testMatch": [
       "**/?(*.)(spec|test|e2e).js?(x)"

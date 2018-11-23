@@ -6158,6 +6158,11 @@ istanbul@^0.4.5:
     which "^1.1.1"
     wordwrap "^1.0.0"
 
+jest-canvas-mock@^1.1.0:
+  version "1.1.0"
+  resolved "http://fap.wenshidata.com:8081/repository/npm/jest-canvas-mock/-/jest-canvas-mock-1.1.0.tgz#f6ed0998b6be3ae2b7e095d7173441ae62cc831e"
+  integrity sha1-9u0JmLa+OuK34JXXFzRBrmLMgx4=
+
 jest-changed-files@^21.2.0:
   version "21.2.0"
   resolved "http://registry.npm.taobao.org/jest-changed-files/download/jest-changed-files-21.2.0.tgz#5dbeecad42f5d88b482334902ce1cba6d9798d29"

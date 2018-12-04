@@ -59,7 +59,7 @@ export default class BasicLayout extends React.PureComponent {
   getPageTitle() {
     const { location, getRouteData } = this.props;
     const { pathname } = location;
-    let title = '客户关系管理系统';
+    let title = 'FAE诊断工具 - 驭势';
     getRouteData('BasicLayout').forEach((item) => {
       if (item.path === pathname) {
         title = `${item.title || item.name} - ${title}`;

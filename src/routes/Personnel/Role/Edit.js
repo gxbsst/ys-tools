@@ -159,19 +159,19 @@ export default class Edit extends PureComponent {
           </Card>
           <Card bordered={false} title="角色基本信息" className="flex-item" loading={loading}>
             <FormItemGroup className={styles.form} items={fields} form={form} cols={[8, 16]}/>
-            <Tabs defaultActiveKey="product" animated={false}>
-              <TabPane tab="产品线" key="product" className={styles.tabPane}>
-                <CheckboxGroup options={enums('PRODUCT_LINE')} defaultValue={products} onChange={onProductChange}/>
-              </TabPane>
-              <TabPane tab="地区" key="region" className={styles.tabPane}>
-                <div className={styles.regions}>
-                  {cities.map(code => <RegionView key={code} code={code} closable={true} afterClose={this.removeRegion(code)}/>)}
-                  <Popconfirm {...addPopProps}>
-                    <Tag className={styles.addRegion}><Icon type="plus"/> 添加地区</Tag>
-                  </Popconfirm>
-                </div>
-              </TabPane>
-            </Tabs>
+            {/*<Tabs defaultActiveKey="product" animated={false}>*/}
+              {/*<TabPane tab="产品线" key="product" className={styles.tabPane}>*/}
+                {/*<CheckboxGroup options={enums('PRODUCT_LINE')} defaultValue={products} onChange={onProductChange}/>*/}
+              {/*</TabPane>*/}
+              {/*<TabPane tab="地区" key="region" className={styles.tabPane}>*/}
+                {/*<div className={styles.regions}>*/}
+                  {/*{cities.map(code => <RegionView key={code} code={code} closable={true} afterClose={this.removeRegion(code)}/>)}*/}
+                  {/*<Popconfirm {...addPopProps}>*/}
+                    {/*<Tag className={styles.addRegion}><Icon type="plus"/> 添加地区</Tag>*/}
+                  {/*</Popconfirm>*/}
+                {/*</div>*/}
+              {/*</TabPane>*/}
+            {/*</Tabs>*/}
           </Card>
         </div>
         <div className={styles.footer}>

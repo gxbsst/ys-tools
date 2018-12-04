@@ -1,7 +1,7 @@
 import React, {PureComponent} from 'react';
-import { Card, Button, Divider, Progress, Icon } from 'antd';
+import { Card, Button, Divider,  Progress, Icon } from 'antd';
 import { MiniArea } from 'ant-design-pro/lib/Charts';
-
+import { Link } from 'dva/router';
 import styles from './index.less';
 const bodyStyle = { padding: 10 };
 import moment from 'moment';
@@ -37,7 +37,9 @@ export default class VehicleItem extends PureComponent {
       <Card className={styles.card}  bordered={false} bodyStyle={bodyStyle}>
         <div className="vehicle_item">
           <div className="basic">
-            <Button type="primary">{car.name}</Button>
+            <Button type="primary">
+              <Link to={`/vehicle_manager/vehicle/${car.id}/detail`}>{car.name}</Link>
+              </Button>
             <p>{car.num}</p>
             <p>{car.line}</p>
           </div>
@@ -61,7 +63,7 @@ export default class VehicleItem extends PureComponent {
               </tr>
               <tr>
                 <td>磁盘</td>
-                <td><Progress percent={70} /></td>
+                <td><Progress percent={(parseInt(car.hardware.disk)/parseInt(car.disk)*100)} /></td>
                 <td>可用</td>
                 <td><span className="blue">{car.hardware.disk} </span></td>
               </tr>

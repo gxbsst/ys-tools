@@ -7,7 +7,6 @@ import workplace from './workplace';
 // import finance from './finance';
 // import business from './business';
 // import afterSales from './after-sales';
-import personnel from './personnel';
 import setting from './setting';
 // import search from './search';
 // import callcenter from './callcenter';
@@ -41,6 +40,7 @@ export const getNavData = app => [
       tool(app),
       vehicleManager(app),
       logsManager(app),
+      // examples(app),
       // search(app),
       // callcenter(app),
       // clew(app),

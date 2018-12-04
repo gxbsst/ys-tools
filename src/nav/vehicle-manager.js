@@ -11,7 +11,23 @@ export default app => (
         name: '车辆信息',
         path: 'vehicle',
         can: 12001000,
-        component: dynamicWrapper(app, [], () => import('../routes/Vehicle/index')),
+
+        children: [
+          {
+            path: '/',
+            component: dynamicWrapper(app, [], () => import('../routes/Vehicle/index')),
+          },
+          {
+            path: ':id',
+            children: [
+              {
+                title: '详情',
+                path: 'detail',
+                component: dynamicWrapper(app, [], () => import('../routes/Vehicle/detail.page')),
+              },
+            ],
+          },
+        ]
       },
     ],
   }

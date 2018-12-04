@@ -1,7 +1,7 @@
 import React, {PureComponent} from 'react';
 import PageHeaderLayout from '../../layouts/PageHeaderLayout';
 
-import {Col, Row} from 'antd';
+import {Card, Col, Row} from 'antd';
 import VehicleItem from '../../components/VehicleItem';
 import autodata from '../../decorators/AutoData';
 import {can} from '../../decorators';
@@ -15,10 +15,12 @@ export default class Vehicle extends PureComponent {
   }
 
   render() {
-    const { $data: { data } } = this.props;
+    const { $data: { data, pagination, loading, starting } } = this.props;
 
     return (
       <PageHeaderLayout>
+
+        <Card className="flex-item" bordered={false} loading={starting}>
         <Row gutter={10}>
           {data ?  (data.map((car) => (
             <Col  xl={6} lg={8}  md={10} key={car.num}>
@@ -26,6 +28,7 @@ export default class Vehicle extends PureComponent {
             </Col>
             ))) : null}
         </Row>
+        </Card>
       </PageHeaderLayout>
     )
   }

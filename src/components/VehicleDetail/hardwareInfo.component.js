@@ -1,7 +1,7 @@
 import React, {PureComponent} from 'react';
 import { Card, Button, Divider, Progress, Icon } from 'antd';
 import { MiniArea } from 'ant-design-pro/lib/Charts';
-import styles from 'module.component.less'
+import styles from './module.component.less'
 import hardwareInfo from './../VehicleItem/index.less';
 import moment from 'moment/moment';
 
@@ -21,7 +21,7 @@ export default class HardwareInfoComponent extends PureComponent {
   render() {
     const cardProps = {
       title: '系统负载',
-      className: styles.card,
+      className: styles.hardwareInfo,
       bordered: false,
       bodyStyle,
     };

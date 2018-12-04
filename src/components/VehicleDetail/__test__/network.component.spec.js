@@ -31,7 +31,7 @@ describe('NetworkComponent', () => {
     expect(downloadTitle.length).toBe(1);
   });
 
-  it('should contain datas', () => {
+  it('should contain data', () => {
     const {container, queryAllByText} = render(<NetworkComponent dataSource={dataSource}/>);
     const speed = queryAllByText(/1000 M/);
     const networkUpload = queryAllByText(/12KB\/s/);

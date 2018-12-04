@@ -2,7 +2,7 @@ import React, {PureComponent} from 'react';
 import classNames from 'classnames';
 import {Card, Table, Tag} from 'antd';
 
-import styles from 'module.component.less'
+import styles from './module.component.less'
 
 const bodyStyle = {padding: 0};
 
@@ -26,7 +26,7 @@ export default class ModuleComponent extends PureComponent {
     const {dataSource} = this.props;
     const cardProps = {
       title: '模块',
-      className: styles.card,
+      className: styles.module,
       bordered: false,
       bodyStyle,
     };

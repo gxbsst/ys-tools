@@ -1,33 +1,121 @@
 @import "~antd/lib/style/themes/default.less";
 @import "../../utils/utils.less";
 
-.module {
+.module, .camera, .radar, .network, .can, .gps, .hardwareInfo {
+  height: 328px;
+  margin-bottom: 10px;
   :global {
-    .ant-table-small {
-      border: none;
-      border-radius: 0;
-      & > .ant-table-content .ant-table-header {
-        background: transparent;
-        line-height: 24px;
-      }
+    .ant-card-head {
+      padding: 0 20px;
     }
-    .ant-table {
-      table {
-        width: 100%;
-      }
-      th, td {
-        padding: 11px;
-        background: none !important;
-      }
-      tr:nth-last-of-type(1) td {
-        border-bottom: none;
-      }
-      th:first-of-type, td:first-of-type {
-        text-align: center;
-      }
+    .ant-card-body {
+      padding: 0 !important;
+      height: 100%;
+    }
+    .ant-card-extra {
+      padding: 15px 0;
+    }
+    .blue {
+      color: #2593fb;
+    }
+    .green {
+      color: #58c22d;
+    }
+  }
+}
+
+.gps {
+  height: 202px;
+  :global {
+    .ant-card-body {
+      padding: 10px !important;
+      height: 100%;
     }
     .ant-tag {
-      margin: 0;
+      margin-right: 10px;
+    }
+  }
+}
+
+.can {
+  height: 202px;
+}
+
+.radar {
+  height: 265px;
+  img {
+    height: 212px;
+  }
+}
+
+.camera {
+  height: 265px;
+  table {
+    width: 100%;
+    td {
+      text-align: center;
+      border: 1px solid hsl(0, 0%, 94%);
+    }
+  }
+}
+
+.hardwareInfo {
+  height: 265px;
+  :global {
+    .available {
+      padding: 10px;
+      height: 100%;
+      td {
+        height: 40px;
+      }
+      .td1 {
+        width: 10%;
+      }
+      .td2 {
+        width: 40%;
+        .available_mem {
+          width: 100%;
+          .dot-h, .dot-l {
+            border-radius: 8px;
+            display: inline-block;
+            margin-right: 8px;
+            position: relative;
+            top: -1px;
+            height: 8px;
+            width: 8px;
+          }
+          .dot-h {
+            background: rgb(24, 144, 255);
+          }
+          .dot-l {
+            background: #e4e7ee;
+          }
+        }
+      }
+      .td3 {
+        width: 15%;
+      }
+      .td4 {
+        width: 40%;
+      }
+      .antd-pro-charts-miniChart {
+        canvas {
+          margin-top: -30px;
+        }
+      }
+    }
+  }
+}
+
+.network {
+  height: 265px;
+  :global {
+    .ant-card-body {
+      padding: 10px !important;
+      height: 100%;
+    }
+    dt, dd {
+      line-height: 200%;
     }
   }
 }

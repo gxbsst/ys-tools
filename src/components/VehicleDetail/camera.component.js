@@ -1,7 +1,7 @@
 import React, {PureComponent} from 'react';
 import {Card, Icon} from 'antd';
 
-import styles from 'module.component.less'
+import styles from './module.component.less'
 
 const bodyStyle = {padding: 0};
 
@@ -10,14 +10,12 @@ export default class CameraComponent extends PureComponent {
   render() {
     const cardProps = {
       title: '摄像头',
-      className: styles.card,
+      className: styles.camera,
       bordered: false,
       bodyStyle,
     };
 
-    const {dataSource: {camera}} = this.props;
-
-    console.log(camera);
+    const {dataSource: {cameras}} = this.props;
 
     return (
       <Card {...cardProps}>
@@ -25,12 +23,12 @@ export default class CameraComponent extends PureComponent {
           <tbody>
           <tr>
             {
-              camera ? (
-                camera.map((c) => {
+              cameras ? (
+                cameras.map((camera, index) => {
                   return (
-                    <td key={c.id}>
-                      {c.name}<br/>
-                      <Icon type="camera"/>{c.status}
+                    <td key={camera.id} className={"td"+index}>
+                      {camera.name}<br/>
+                      <Icon className="green" type="camera"/>{camera.status}
                     </td>
                   )
                 })
